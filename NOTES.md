@@ -3,7 +3,6 @@ Features I want:
 * Home page
 * Nav bar
 * List existing journal entries
-* Favorite entries?
 * Delete entries
 
 MVP Goals
