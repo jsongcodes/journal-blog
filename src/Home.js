@@ -4,8 +4,6 @@ import EntryList from "./EntryList";
 const Home = () => {
   const [entries, setEntries] = useState(null);
 
-  const [name, setName] = useState('Jasmin')
-
   useEffect(() => {
       fetch('http://localhost:8000/entries')
       .then(resp => resp.json())
