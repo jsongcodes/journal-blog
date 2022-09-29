@@ -1,4 +1,5 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
+import EntryList from "./EntryList";
 
 const Home = () => {
   const [entries, setEntries] = useState([
@@ -22,14 +23,22 @@ const Home = () => {
     },
   ]);
 
+  const [name, setName] = useState('Jasmin')
+
+  const handleDelete = (id) => {
+    const newEntries = entries.filter(entry => entry.id !== id);
+    setEntries(newEntries);
+  }
+
+  useEffect(() => {
+    console.log('useeffect ran')
+  }, [])
+
   return (
     <div className="home">
-      {entries.map((entry) => (
-        <div className="entry-preview" key={entry.id}>
-          <h2>{entry.title}</h2>
-          <p>Written by {entry.author}</p>
-        </div>
-      ))}
+      <EntryList entries={entries} title="All Entries" handleDelete={handleDelete}/>
+      <button onClick={() => setName('new name')}>change name</button>
+      <p>{name}</p>
     </div>
   );
 };
