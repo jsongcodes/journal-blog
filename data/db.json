@@ -1,0 +1,15 @@
+{
+    "entries": [
+    {
+        "id": 1,
+        "title": "What made you feel grateful today?",
+        "body": "lorem ipsum...",
+        "author": "Jasmin"
+    },    {
+        "id": 2,
+        "title": "What made you feel happy today?",
+        "body": "lorem ipsum...",
+        "author": "New User"
+    }
+
+]}
