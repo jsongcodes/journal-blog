@@ -2,15 +2,52 @@
   "entries": [
     {
       "id": 1,
-      "title": "What made you feel grateful today?",
+      "prompt": "What made you feel grateful today?",
       "body": "lorem ipsum...",
-      "author": "Jasmin"
+      "date": "September 22th, 2022"
     },
     {
-      "id": 2,
-      "title": "What made you feel happy today?",
-      "body": "lorem ipsum...",
-      "author": "New User"
-    }
+        "id": 2,
+        "prompt": "What is your favorite thing about yourself and why?",
+        "body": "lorem ipsum...",
+        "date": "September 23th, 2022"
+      },
+      {
+        "id": 3,
+        "prompt": "Who inspires you? Why?",
+        "body": "lorem ipsum...",
+        "date": "September 24th, 2022"
+      },
+      {
+        "id": 4,
+        "prompt": "What are your priorities today?",
+        "body": "lorem ipsum...",
+        "date": "September 25th, 2022"
+      },
+      {
+        "id": 5,
+        "prompt": "Looking back, what are some things you have achieved?",
+        "body": "lorem ipsum...",
+        "date": "September 26th, 2022"
+      },
+      {
+        "id": 6,
+        "prompt": "Where would you like to visit? Why?",
+        "body": "lorem ipsum...",
+        "date": "September 27th, 2022"
+      },
+      {
+        "id": 7,
+        "prompt": "Name 3 things you will do for yourself today.",
+        "body": "lorem ipsum...",
+        "date": "September 28th, 2022"
+      },
+      {
+        "id": 8,
+        "prompt": "What makes you happy? Why?",
+        "body": "lorem ipsum...",
+        "date": "September 29th, 2022"
+      }
   ]
+  
 }
