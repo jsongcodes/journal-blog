@@ -24,8 +24,8 @@ const EntryDetails = () => {
     <div className="entry-details">
       {entries && (
         <article>
-          <h2>{entries.title}</h2>
-          <p>Written by {entries.author}</p>
+          <h2>{entries.prompt}</h2>
+          <p>Written on {entries.date}</p>
           <div>{entries.body}</div>
           <button onClick={handleClick}>delete</button>
         </article>

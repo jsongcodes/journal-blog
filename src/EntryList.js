@@ -6,8 +6,8 @@ const EntryList = ({ entries }) => {
       {entries.map((entry) => (
         <div className="entry-preview" key={entry.id}>
           <Link to={`/entries/${entry.id}`}>
-            <h2>{entry.title}</h2>
-            <p>Written by {entry.author}</p>
+            <h2>{entry.prompt}</h2>
+            <p>Written on {entry.date}</p>
           </Link>
         </div>
       ))}
