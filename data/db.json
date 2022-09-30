@@ -4,50 +4,55 @@
       "id": 1,
       "prompt": "What made you feel grateful today?",
       "body": "lorem ipsum...",
-      "date": "September 22th, 2022"
+      "date": "2022-09-22"
     },
     {
-        "id": 2,
-        "prompt": "What is your favorite thing about yourself and why?",
-        "body": "lorem ipsum...",
-        "date": "September 23th, 2022"
-      },
-      {
-        "id": 3,
-        "prompt": "Who inspires you? Why?",
-        "body": "lorem ipsum...",
-        "date": "September 24th, 2022"
-      },
-      {
-        "id": 4,
-        "prompt": "What are your priorities today?",
-        "body": "lorem ipsum...",
-        "date": "September 25th, 2022"
-      },
-      {
-        "id": 5,
-        "prompt": "Looking back, what are some things you have achieved?",
-        "body": "lorem ipsum...",
-        "date": "September 26th, 2022"
-      },
-      {
-        "id": 6,
-        "prompt": "Where would you like to visit? Why?",
-        "body": "lorem ipsum...",
-        "date": "September 27th, 2022"
-      },
-      {
-        "id": 7,
-        "prompt": "Name 3 things you will do for yourself today.",
-        "body": "lorem ipsum...",
-        "date": "September 28th, 2022"
-      },
-      {
-        "id": 8,
-        "prompt": "What makes you happy? Why?",
-        "body": "lorem ipsum...",
-        "date": "September 29th, 2022"
-      }
+      "id": 2,
+      "prompt": "What is your favorite thing about yourself and why?",
+      "body": "lorem ipsum...",
+      "date": "2022-09-23"
+    },
+    {
+      "id": 3,
+      "prompt": "Who inspires you? Why?",
+      "body": "lorem ipsum...",
+      "date": "2022-09-24"
+    },
+    {
+      "id": 4,
+      "prompt": "What are your priorities today?",
+      "body": "lorem ipsum...",
+      "date": "2022-09-25"
+    },
+    {
+      "id": 5,
+      "prompt": "Looking back, what are some things you have achieved?",
+      "body": "lorem ipsum...",
+      "date": "2022-09-26"
+    },
+    {
+      "id": 6,
+      "prompt": "Where would you like to visit? Why?",
+      "body": "lorem ipsum...",
+      "date": "2022-09-27"
+    },
+    {
+      "id": 7,
+      "prompt": "Name 3 things you will do for yourself today.",
+      "body": "lorem ipsum...",
+      "date": "2022-09-28"
+    },
+    {
+      "id": 8,
+      "prompt": "What makes you happy? Why?",
+      "body": "lorem ipsum...",
+      "date": "2022-09-29"
+    },
+    {
+      "prompt": "What is",
+      "body": "cxzcx",
+      "date": "2022-09-30",
+      "id": 9
+    }
   ]
-  
 }
