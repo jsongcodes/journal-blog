@@ -15,7 +15,7 @@
   border-bottom: 1px solid #f2f2f2;
 }
 .navbar h1 {
-  color: #f1356d;
+  color: #796fc1;
 }
 .navbar .links {
   margin-left: auto;
@@ -26,7 +26,7 @@
   padding: 6px;
 }
 .navbar a:hover {
-  color: #f1356d;
+  color: #796fc1;
 }
 .content {
   max-width: 600px;
@@ -44,7 +44,7 @@
 }
 .entry-preview h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #796fc1;
   margin-bottom: 8px;
 }
 
@@ -54,14 +54,14 @@
 
 .entry-details h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #796fc1;
   margin-bottom: 10px;
 }
 .entry-details div {
   margin: 20px 0;
 }
 .entry-details button {
-  background: #f1356d;
+  background: #796fc1;
   color: #fff;
   border: 0;
   padding: 8px;
@@ -79,7 +79,7 @@
 }
 .create h2 {
   font-size: 20px;
-  color: #f1356d;
+  color: #796fc1;
   margin-bottom: 30px;
 }
 .create input, .create textarea, .create select {
@@ -89,9 +89,10 @@
   border: 1px solid #ddd;
   box-sizing: border-box;
   display: block;
+  border-radius: 15px;
 }
 .create button {
-  background: #f1356d;
+  background: #796fc1;
   color: #fff;
   border: 0;
   padding: 8px;

@@ -41,6 +41,7 @@ const Create = () => {
         ></textarea>
         <label>Entry date:</label>
         <input
+            required
             type="date"
             value={date}
             placeholder="DD/MM/YY"
