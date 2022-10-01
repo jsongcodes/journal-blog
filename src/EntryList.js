@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 
 const EntryList = ({ entries }) => {
+
   return (
     <div className="entry-list">
       {entries.map((entry) => (

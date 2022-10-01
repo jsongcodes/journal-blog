@@ -49,10 +49,16 @@
       "date": "2022-09-29"
     },
     {
-      "prompt": "What is",
-      "body": "cxzcx",
-      "date": "2022-09-30",
+      "prompt": "Who inspires you? Why?",
+      "body": "dsadsadsa",
+      "date": "2022-09-09",
       "id": 9
+    },
+    {
+      "prompt": "Where would you like to visit? Why?",
+      "body": "fdsfdsfsd",
+      "date": "2022-09-14",
+      "id": 10
     }
   ]
 }

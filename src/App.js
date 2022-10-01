@@ -1,8 +1,9 @@
 import Navbar from './Navbar';
-import Home from './Home';
+import PastEntries from './PastEntries';
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Create from './Create';
 import EntryDetails from './EntryDetails';
+import Home from './Home';
 
 const App = () => {
   return (
@@ -13,6 +14,9 @@ const App = () => {
           <Switch>
             <Route exact path="/">
               <Home />
+            </Route>
+            <Route path="/pastentries">
+              <PastEntries />
             </Route>
             <Route path="/create">
               <Create />

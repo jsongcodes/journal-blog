@@ -10,7 +10,7 @@ const EntryDetails = () => {
     fetch(`http://localhost:8000/entries/${id}`, {
         method: 'DELETE',
     }).then(() => {
-      history.push("/");
+      history.push("/pastentries");
     });
   };
 
