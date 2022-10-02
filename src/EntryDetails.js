@@ -18,7 +18,7 @@ const EntryDetails = () => {
     fetch(`http://localhost:8000/entries/${id}`)
       .then((resp) => resp.json())
       .then((data) => setEntries(data));
-  }, []);
+  }, [id]);
 
   return (
     <div className="entry-details">
