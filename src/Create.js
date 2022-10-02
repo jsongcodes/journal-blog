@@ -23,9 +23,7 @@ const Create = () => {
   return (
     <div className="create">
       <h2>Add a New Entry</h2>
-      <form onSubmit={handleSubmit}>
-        <label>How are you feeling today?</label>
-        
+      <form onSubmit={handleSubmit}>        
         <label>Entry prompt:</label>
         <select
           required
