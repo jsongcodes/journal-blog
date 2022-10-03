@@ -15,8 +15,9 @@ const Create = () => {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(entry),
-    }).then(() => {
-      history.push("/pastentries");
+    })
+    .then(() => {
+      history.push(`/pastentries`);
     });
   };
 
@@ -66,7 +67,7 @@ const Create = () => {
           placeholder="DD/MM/YY"
           onChange={(e) => setDate(e.target.value)}
         />
-        <button>Add Entry</button>
+        <button>Add Entry 📝</button>
       </form>
     </div>
   );

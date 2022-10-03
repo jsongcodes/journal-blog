@@ -23,11 +23,11 @@ const EntryDetails = () => {
   return (
     <div className="entry-details">
       {entries && (
-        <article>
+        <article className="entry-details">
           <h2>{entries.prompt}</h2>
-          <p>Written on {entries.date}</p>
-          <div>{entries.body}</div>
-          <button onClick={handleClick}>delete</button>
+          <p className="entry-details">Written on {entries.date}</p>
+          <div className="entry-details">{entries.body}</div>
+          <button onClick={handleClick}>Delete 🗑️ </button>
         </article>
       )}
     </div>
