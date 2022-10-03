@@ -18,5 +18,3 @@ const PastEntries = () => {
 };
 
 export default PastEntries;
-
-//callback for deleting, adding

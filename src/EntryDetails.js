@@ -4,7 +4,6 @@ import { useHistory, useParams } from "react-router-dom";
 const EntryDetails = () => {
   const { id } = useParams();
   const [entries, setEntries] = useState(null);
-  //singular entry
   const history = useHistory();
 
   const handleClick = () => {
@@ -14,7 +13,6 @@ const EntryDetails = () => {
       history.push("/pastentries");
     });
   };
-  //delete from state .then for response, .then to set state for the entry. create filter to remove it from original state. callback 
 
   useEffect(() => {
     fetch(`http://localhost:8000/entries/${id}`)
