@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import EntryList from "./EntryList";
 
-const Home = () => {
+const PastEntries = () => {
   const [entries, setEntries] = useState(null);
 
   useEffect(() => {
@@ -17,4 +17,6 @@ const Home = () => {
   );
 };
 
-export default Home;
+export default PastEntries;
+
+//callback for deleting, adding

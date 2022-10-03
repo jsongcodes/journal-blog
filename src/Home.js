@@ -30,9 +30,7 @@ const Home = () => {
   };
 
   const handleClick = () => {
-    fetch(`http://localhost:3000/create`).then(() => {
-      history.push("/create");
-    });
+history.push("/create")
   };
 
   return (
