@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "./index.css";
+import "../index.css";
 import {useHistory} from 'react-router-dom';
 
 const Create = ({onAddEntry}) => {

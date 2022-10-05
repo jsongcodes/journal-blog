@@ -2,21 +2,7 @@ import { Link } from "react-router-dom";
 import Grid from "@material-ui/core/Grid";
 import Container from "@material-ui/core/Container";
 
-// import {useState} from 'react';
-
-// import EntryDetails from "./EntryDetails";
-
 const EntryList = ({entries}) => {
-  // const [entries, setEntries] = useState([]);
-
-  // function deleteEntry(id){
-  //   const updatedEntries = entries.filter(entry => entry.id !== id)
-  //   setEntries(updatedEntries)
-  // }
-// function deleteEntry(deletedEntry){
-//   const updatedEntries = entries.filter((entry) => entry.id !== deletedEntry.id)
-//   setEntries(updatedEntries);
-// }
 
   return (
     <div className="entry-list">
@@ -39,7 +25,6 @@ const EntryList = ({entries}) => {
           ))}
         </Grid>
       </Container>
-      {/* <EntryDetails deleteEntry={deleteEntry}/> */}
     </div>
   );
 };
