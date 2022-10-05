@@ -2,12 +2,12 @@ import { useState } from "react";
 import "./index.css";
 import {useHistory} from 'react-router-dom';
 
-const Create = () => {
+const Create = ({onAddEntry}) => {
   const [prompt, setPrompt] = useState("");
   const [body, setBody] = useState("");
   const [date, setDate] = useState("");
-  const history = useHistory();
- 
+const history = useHistory();
+  
   const handleSubmit = (e) => {
     e.preventDefault();
     const entry = { prompt, body, date };
@@ -16,6 +16,8 @@ const Create = () => {
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(entry),
     })
+    .then(resp => resp.json())
+    .then(data => onAddEntry(data))
     .then(() => {
       history.push(`/pastentries`);
     });
