@@ -1,13 +1,13 @@
 import { useState } from "react";
 import "../index.css";
-import {useHistory} from 'react-router-dom';
+import { useHistory } from "react-router-dom";
 
-const Create = ({onAddEntry}) => {
+const NewEntry = ({ onAddEntry }) => {
   const [prompt, setPrompt] = useState("");
   const [body, setBody] = useState("");
   const [date, setDate] = useState("");
-const history = useHistory();
-  
+  const history = useHistory();
+
   const handleSubmit = (e) => {
     e.preventDefault();
     const entry = { prompt, body, date };
@@ -16,17 +16,17 @@ const history = useHistory();
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(entry),
     })
-    .then(resp => resp.json())
-    .then(data => onAddEntry(data))
-    .then(() => {
-      history.push(`/pastentries`);
-    });
+      .then((resp) => resp.json())
+      .then((data) => onAddEntry(data))
+      .then(() => {
+        history.push(`/entries`);
+      });
   };
 
   return (
     <div className="create">
       <h2>Add a New Entry</h2>
-      <form onSubmit={handleSubmit}>        
+      <form onSubmit={handleSubmit}>
         <label>Entry prompt:</label>
         <select
           required
@@ -75,4 +75,4 @@ const history = useHistory();
   );
 };
 
-export default Create;
+export default NewEntry;

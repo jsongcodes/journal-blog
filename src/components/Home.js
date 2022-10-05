@@ -10,9 +10,9 @@ import { useHistory } from "react-router-dom";
 const useStyles = makeStyles({
   root: {
     width: 450,
-    margin: 'auto',
-    padding: '50px',
-    color: '#fff'
+    margin: "auto",
+    padding: "50px",
+    color: "#fff",
   },
 });
 
@@ -27,7 +27,7 @@ const Home = () => {
   };
 
   const handleClick = () => {
-history.push("/create")
+    history.push("/newentry");
   };
 
   return (

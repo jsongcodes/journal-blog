@@ -1,19 +1,31 @@
-import { useState, useEffect } from "react";
-import EntryList from "./EntryList";
+import { Link } from "react-router-dom";
+import Grid from "@material-ui/core/Grid";
+import Container from "@material-ui/core/Container";
 
-const PastEntries = () => {
-  const [entries, setEntries] = useState([]);
-
-  useEffect(() => {
-      fetch('http://localhost:8000/entries')
-      .then(resp => resp.json())
-      .then(data => setEntries(data))
-  }, [])
-
+const PastEntries = ({ entries }) => {
   return (
-    <div className="past-entries">
-      {entries && <EntryList entries={entries} title="All Entries"/>}
+    <div className="entry-list">
+      <Container>
+        <Grid container spacing={3}>
+          {entries.map((entry) => (
+            <Grid
+              className="entry-preview"
+              item
+              xs={12}
+              md={6}
+              lg={4}
+              key={entry.id}
+            >
 
+
+              {/* <Link to={`/entries`}> */}
+                <h2>{entry.prompt}</h2>
+                <p>Written on {entry.date}</p>
+              {/* </Link> */}
+            </Grid>
+          ))}
+        </Grid>
+      </Container>
     </div>
   );
 };

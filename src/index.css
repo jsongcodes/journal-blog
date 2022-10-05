@@ -63,11 +63,11 @@ body {
   margin: 20px 0;
 } 
 
-.entry-preview:hover {
+/* .entry-preview:hover {
   box-shadow: 1px 3px 5px rgba(0,0,0,0.1);
-  border-radius: 10px;
+  border-radius: 10px; */
 
-}
+/* } */
 .entry-preview h2 {
   font-size: 20px;
   color: #796fc1;

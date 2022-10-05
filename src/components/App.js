@@ -1,11 +1,23 @@
-import Navbar from './Navbar';
-import PastEntries from './PastEntries';
-import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
-import CreatePage from './CreatePage';
-import EntryDetails from './EntryDetails';
-import Home from './Home';
+import Navbar from "./Navbar";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import NewEntry from "./NewEntry";
+import PastEntries from "./PastEntries";
+import Home from "./Home";
+import { useState, useEffect } from "react";
 
 const App = () => {
+  const [entries, setEntries] = useState([]);
+
+  function onAddEntry(newEntry) {
+    const updatedEntries = [...entries, newEntry];
+    setEntries(updatedEntries);
+  }
+
+  useEffect(() => {
+    fetch("http://localhost:8000/entries")
+      .then((resp) => resp.json())
+      .then((data) => setEntries(data));
+  }, []);
 
   return (
     <Router>
@@ -16,14 +28,11 @@ const App = () => {
             <Route exact path="/">
               <Home />
             </Route>
-            <Route path="/pastentries">
-              <PastEntries />
+            <Route path="/entries">
+              <PastEntries entries={entries} />
             </Route>
-            <Route path="/create">
-              <CreatePage />
-            </Route>
-            <Route path="/entries/:id">
-              <EntryDetails />
+            <Route path="/newentry">
+              <NewEntry onAddEntry={onAddEntry} />
             </Route>
           </Switch>
         </div>
