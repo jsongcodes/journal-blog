@@ -8,7 +8,7 @@ import { useState, useEffect } from "react";
 const App = () => {
   const [entries, setEntries] = useState([]);
 
-  function onAddEntry(newEntry) {
+  function handleAddEntry(newEntry) {
     const updatedEntries = [...entries, newEntry];
     setEntries(updatedEntries);
   }
@@ -32,7 +32,7 @@ const App = () => {
               <PastEntries entries={entries} />
             </Route>
             <Route path="/newentry">
-              <NewEntry onAddEntry={onAddEntry} />
+              <NewEntry onAddEntry={handleAddEntry} />
             </Route>
           </Switch>
         </div>

@@ -2,123 +2,45 @@
   "entries": [
     {
       "prompt": "Who inspires you? Why?",
-      "body": "dsadsadsa",
+      "body": "My parents inspire me because they work hard.",
       "date": "2022-09-09",
       "id": 1
     },
     {
       "prompt": "What is your favorite thing about yourself and why?",
-      "body": "dsadsadsa",
+      "body": "My favorite thing about myself is my willingness to improve because positive habits make me happier.",
       "date": "2022-09-09",
       "id": 2
     },
     {
       "prompt": "What are your priorities today?",
-      "body": "dsadsadsa",
+      "body": "My priorities are to get my project done, lesson plan, and walk 10k steps.",
       "date": "2022-09-09",
       "id": 3
     },
     {
       "prompt": "Looking back, what are some things you have achieved?",
-      "body": "dsadsadsa",
+      "body": "I finished Phase 1 and most of Phase 2 in my coding bootcamp.",
       "date": "2022-09-09",
       "id": 4
     },
     {
       "prompt": "What makes you happy? Why?",
-      "body": "dsadsadsa",
+      "body": "My 2 cats make me happy because they are so cute and loving.",
       "date": "2022-09-09",
       "id": 5
     },
     {
-      "prompt": "Who inspires you? Why?",
-      "body": "dsadsadsa",
-      "date": "2022-09-09",
+      "prompt": "Name 3 things you will do for yourself today.",
+      "body": "1. Exercise 2. Complete my work 3. Read",
+      "date": "2022-10-04",
       "id": 6
     },
     {
-      "prompt": "Who inspires you? Why?",
-      "body": "dsadsadsa",
-      "date": "2022-09-09",
+      "prompt": "Where would you like to visit? Why?",
+      "body": "Japan because I would love to try their food.",
+      "date": "2022-10-04",
       "id": 7
-    },
-    {
-      "prompt": "Name 3 things you will do for yourself today.",
-      "body": "fdsfds",
-      "date": "2022-10-04",
-      "id": 8
-    },
-    {
-      "prompt": "What are your priorities today?",
-      "body": "fdsfd",
-      "date": "2022-11-02",
-      "id": 9
-    },
-    {
-      "prompt": "Where would you like to visit? Why?",
-      "body": "fdsfds",
-      "date": "2022-10-04",
-      "id": 10
-    },
-    {
-      "prompt": "Name 3 things you will do for yourself today.",
-      "body": "fdsdfs",
-      "date": "2022-10-05",
-      "id": 11
-    },
-    {
-      "prompt": "What are your priorities today?",
-      "body": "fdfds",
-      "date": "2022-10-05",
-      "id": 12
-    },
-    {
-      "prompt": "What are your priorities today?",
-      "body": "hi",
-      "date": "2022-10-05",
-      "id": 13
-    },
-    {
-      "prompt": "Where would you like to visit? Why?",
-      "body": "japan",
-      "date": "2022-10-05",
-      "id": 14
-    },
-    {
-      "prompt": "What makes you happy? Why?",
-      "body": "fdsfdsfdsssssss",
-      "date": "2022-10-05",
-      "id": 15
-    },
-    {
-      "prompt": "Name 3 things you will do for yourself today.",
-      "body": "1.2.3.",
-      "date": "2022-10-05",
-      "id": 16
-    },
-    {
-      "prompt": "Who inspires you? Why?",
-      "body": "fdsfds",
-      "date": "2022-10-05",
-      "id": 17
-    },
-    {
-      "prompt": "Looking back, what are some things you have achieved?",
-      "body": "fdsfdsfds",
-      "date": "2022-11-04",
-      "id": 18
-    },
-    {
-      "prompt": "What are your priorities today?",
-      "body": "fdsfdss",
-      "date": "2022-11-04",
-      "id": 19
-    },
-    {
-      "prompt": "Who inspires you? Why?",
-      "body": "fdfds",
-      "date": "2022-10-05",
-      "id": 20
     }
   ]
 }

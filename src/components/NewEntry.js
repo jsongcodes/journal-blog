@@ -6,6 +6,7 @@ const NewEntry = ({ onAddEntry }) => {
   const [prompt, setPrompt] = useState("");
   const [body, setBody] = useState("");
   const [date, setDate] = useState("");
+
   const history = useHistory();
 
   const handleSubmit = (e) => {
@@ -24,12 +25,11 @@ const NewEntry = ({ onAddEntry }) => {
   };
 
   return (
-    <div className="create">
+    <div className="new-entry">
       <h2>Add a New Entry</h2>
       <form onSubmit={handleSubmit}>
         <label>Entry prompt:</label>
         <select
-          required
           value={prompt}
           onChange={(e) => setPrompt(e.target.value)}
         >
@@ -61,6 +61,7 @@ const NewEntry = ({ onAddEntry }) => {
           value={body}
           onChange={(e) => setBody(e.target.value)}
         ></textarea>
+
         <label>Entry date:</label>
         <input
           required
@@ -69,7 +70,9 @@ const NewEntry = ({ onAddEntry }) => {
           placeholder="DD/MM/YY"
           onChange={(e) => setDate(e.target.value)}
         />
+
         <button>Add Entry 📝</button>
+
       </form>
     </div>
   );
