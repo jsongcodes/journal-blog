@@ -13,5 +13,5 @@ const Navbar = () => {
     </nav>
   );
 };
-
+//navlinks for different routes
 export default Navbar;

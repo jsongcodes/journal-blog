@@ -1,6 +1,6 @@
 import MoodIcon from "@material-ui/icons/Mood";
 import SentimentVeryDissatisfiedIcon from "@material-ui/icons/SentimentVeryDissatisfied";
-import React from "react";
+import React, {useState} from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Grid from "@material-ui/core/Grid";
 import Slider from "@material-ui/core/Slider";
@@ -20,7 +20,7 @@ const Home = () => {
   const classes = useStyles();
   const history = useHistory();
 
-  const [value, setValue] = React.useState(30);
+  const [value, setValue] = useState(30);
 
   const handleChange = (event, newValue) => {
     setValue(newValue);

@@ -3,19 +3,27 @@ import "../index.css";
 import { useHistory } from "react-router-dom";
 
 const NewEntry = ({ onAddEntry }) => {
-  const [prompt, setPrompt] = useState("");
-  const [body, setBody] = useState("");
-  const [date, setDate] = useState("");
 
+  const [inputForm, setInputForm] = useState({
+    prompt: "",
+    body: "",
+    date: "",
+  });
+  
   const history = useHistory();
+
+
+  const handleChange = (e) => {
+    setInputForm({ ...inputForm, [e.target.name]: e.target.value });
+  };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    const entry = { prompt, body, date };
+
     fetch("http://localhost:8000/entries", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(entry),
+      body: JSON.stringify(inputForm),
     })
       .then((resp) => resp.json())
       .then((data) => onAddEntry(data))
@@ -29,10 +37,7 @@ const NewEntry = ({ onAddEntry }) => {
       <h2>Add a New Entry</h2>
       <form onSubmit={handleSubmit}>
         <label>Entry prompt:</label>
-        <select
-          value={prompt}
-          onChange={(e) => setPrompt(e.target.value)}
-        >
+        <select name="prompt" value={inputForm.prompt} onChange={handleChange}>
           <option value="Select Prompt">Select Prompt</option>
           <option value="What is your favorite thing about yourself and why?">
             What is your favorite thing about yourself and why?
@@ -57,22 +62,23 @@ const NewEntry = ({ onAddEntry }) => {
 
         <label>Entry body:</label>
         <textarea
+        name="body"
           required
-          value={body}
-          onChange={(e) => setBody(e.target.value)}
+          value={inputForm.body}
+          onChange={handleChange}
         ></textarea>
 
         <label>Entry date:</label>
         <input
           required
+          name="date"
           type="date"
-          value={date}
+          value={inputForm.date}
           placeholder="DD/MM/YY"
-          onChange={(e) => setDate(e.target.value)}
+          onChange={handleChange}
         />
 
         <button>Add Entry 📝</button>
-
       </form>
     </div>
   );
